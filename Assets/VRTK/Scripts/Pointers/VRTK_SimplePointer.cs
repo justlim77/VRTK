@@ -154,10 +154,7 @@ namespace VRTK
 
             base.InitPointer();
 
-            if (showPointerTip && objectInteractor)
-            {
-                objectInteractor.transform.localScale = pointerTip.transform.localScale * 1.05f;
-            }
+            ResizeObjectInteractor();
 
             SetPointerTransform(pointerLength, pointerThickness);
             TogglePointer(false);
@@ -201,6 +198,16 @@ namespace VRTK
                 pointerBeam.GetComponentInChildren<Renderer>().enabled = false;
                 pointerTip.GetComponentInChildren<Renderer>().enabled = false;
             }
+
+            ResizeObjectInteractor();
+        }
+
+        private void ResizeObjectInteractor()
+        {
+            if (showPointerTip && pointerTip && objectInteractor)
+            {
+                objectInteractor.transform.localScale = pointerTip.transform.localScale * 1.05f;
+            }
         }
 
         private void SetPointerTransform(float setLength, float setThicknes)
@@ -212,10 +219,8 @@ namespace VRTK
             pointerBeam.transform.localPosition = new Vector3(0f, 0f, beamPosition);
             pointerTip.transform.localPosition = new Vector3(0f, 0f, setLength - (pointerTip.transform.localScale.z / 2));
 
-            pointerHolder.transform.localPosition = GetOriginLocalPosition();
-            pointerHolder.transform.localRotation = GetOriginLocalRotation();
-            pointerHolder.transform.position = transform.position;
-            pointerHolder.transform.rotation = transform.rotation;
+            pointerHolder.transform.position = GetOriginPosition();
+            pointerHolder.transform.rotation = GetOriginRotation();
             base.UpdateDependencies(pointerTip.transform.position);
         }
 

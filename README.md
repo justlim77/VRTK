@@ -2,8 +2,12 @@
 > ### VRTK - Virtual Reality Toolkit
 > A productive VR Toolkit for rapidly building VR solutions in Unity3d.
 
+## VRTK has just launched a Kickstarter campaign to fund version 4 and beyond. [Visit the Kickstarter campaign and pledge today! :)](https://www.kickstarter.com/projects/thestonefox/virtual-reality-toolkit-vrtk-version-4-and-beyond)
+
 [![Slack](http://sysdia2.co.uk/badge.svg)](http://invite.vrtk.io)
-[![Waffle](https://img.shields.io/badge/waffle-tracker-blue.svg)](http://tracker.vrtk.io)
+[![Twitter Follow](https://img.shields.io/twitter/follow/vr_toolkit.svg?style=flat&label=twitter)](https://twitter.com/VR_Toolkit)
+[![YouTube](https://img.shields.io/badge/youtube-channel-e52d27.svg)](http://videos.vrtk.io)
+[![Waffle](https://img.shields.io/badge/project-roadmap-blue.svg)](http://tracker.vrtk.io)
 
 | Supported SDK | Download Link |
 |---------------|---------------|
@@ -19,6 +23,11 @@ documentation for this GitHub repository.
 
 Alternatively, the stable versions of the documentation can be viewed
 online at [http://docs.vrtk.io](http://docs.vrtk.io).
+
+## Frequently Asked Questions
+
+If you have an issue or question then check the [FAQ] document to see
+if your query has already been answered.
 
 ## Getting Started
 
@@ -41,7 +50,8 @@ online at [http://docs.vrtk.io](http://docs.vrtk.io).
  * Press Tab to switch between left/right hands.
  * Hold Left Shift to change from translation to rotation for the hands.
  * Hold Left Crtl to switch between X/Y and X/Z axis.
- * All above keys can be remapped using the inspector on the `VRSimulatorCameraRig` prefab.
+ * All above keys can be remapped using the inspector on the
+ `VRSimulatorCameraRig` prefab.
  * Button mapping for the VR control are as follows:
   * Grip: Left mouse button
   * Trigger: Right mouse button
@@ -158,3 +168,4 @@ Code released under the [MIT License].
 [EXAMPLES.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/EXAMPLES.md
 [Fork]: http://help.github.com/fork-a-repo/
 [Open a Pull Request]: https://help.github.com/articles/using-pull-requests/
+[FAQ]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/FAQ.md
